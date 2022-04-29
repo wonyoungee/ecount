@@ -1,0 +1,60 @@
+* ES5
+
+* ES6 : modern js
+
+* type script -> 브라우저가 못 읽음. js로 컴파일 필요. (어떤 버전으로 컴파일 할지 결정 가능)
+
+* ts config : 타입스크립트 설정
+
+<div id="divScope0">Click me! DIV 0</div>
+<div id="divScope1">Click me! DIV 1</div>
+<div id="divScope2">Click me! DIV 2</div>
+<script>
+var i, len = 3;
+for (i = 0; i < len; i++) {
+document.getElementById("div" + i).addEventListener("click", function () {	// 함수 생성시 scope설정됨.  // 
+alert("You clicked div #" + i);	
+}, false);
+}
+</script>
+
+
+
+------------------------------------
+
+common.js 모듈 - import
+index.js - export
+상대경로 - ./~
+
+-------------------------------------
+
+<this와 연관된 로직>
+
+apply()
+
+bind()
+
+call()
+
+
+this는 런타임(실행될때)에 결정
+
+스코프 체인 : 기본적으로 함수 단위의 스코프..  함수 안의 지역변수
+프로토타입 체인 : 같은 펑션 내애세의 관계.. 데이터를 찾아가는 방법.
+
+
+"ts-node": "^10.7.0"	>>	타입스크립트 실행
+
+
+duck typing
+
+type
+enum
+const enum
+의 차이점
+
+
+tsc라는건 타입스크립트 컴파일러	>> npx tsc main.ts
+npx tsc main.ts --target ES6	>> main.ts랑 똑같이 나옴.
+
+nestjs - 서버 프레임워크 

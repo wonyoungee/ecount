@@ -1,0 +1,40 @@
+* d.ts - 명세. 타입 definition(정의)
+        - 왜필요? 컴파일러가 자동으로 만들어줌. 옵션이 있음. tsconfig.json 에서 declaration 옵션으로 줘서 만들어짐.
+        - 동작하는덴 아무 상관 없음.
+        - 타입체크 용도
+등등 몇 가지 산출물 있음..
+
+
+tsconfig.json 파일 추가 .... => tsc만 쳐도 현재 실행된 위치부터 상위 폴더로 올라가며 tsconfig.json 찾아....
+
+소스맵 -> ts 자체를 브라우져 엔진이 해석 못함. 그래서 컴파일 해야함.. 
+//# sourceMappingURL=main.js.map 	>> 맵핑
+tsconfig.json 에서 sourceMap 옵션으로 줘서 만들어짐.
+
+각 모듈마다 독립적인 스코프 가짐.
+
+
+calc.js 실행될때 : 모듈에 절대경로 - node.js는 node_modules 뒤짐..
+        컴파일될때 : 
+
+
+------------- 오후
+
+webpack : js bundler (이카운트는 이거 안씀)
+
+rollup - js bundler (이카운트는 이거씀.)
+
+js(실제모듈), d.ts, map
+
+d.ts 파일 - 실제로 import했을때 모듈 찾아가는 과정
+
+컴파일 하기 위해서는 d.ts파일 있어야함.
+
+import ~ from ~ 상대경로/절대경로 분기 생긴다.
+경로 폴더에 있는 d.ts 찾음.
+
+js - 클로저 디스(apply, call, bind) 프로토타입 + 스코프체인알아두기!!
+
+
+async-await : promise 기반
+
